@@ -30,3 +30,33 @@
 // } else {
 //     System.Console.WriteLine(isPrime ? "Номер варианта простой" : "Номер варианта составной");
 // }
+
+// int[] pointsPerLab = { 8, -1, 10, 9, -1, 7 };
+// int sum = 0;
+// int count = 0;
+
+// foreach (int points in pointsPerLab) {
+//     if (points < 0) {
+//         continue;
+//     }
+//     count++;
+//     sum += points;
+// }
+
+// System.Console.WriteLine($"Сумма баллов за сданные работы: {sum}");
+// System.Console.WriteLine($"Всего работ было сдано: {count}");
+
+int[] groupIDS = { 101, 104, 107, 104, 110 };
+bool hasDuplicates = false;
+
+for (int i = 0; i < groupIDS.Length; i++) {
+    for (int j = i + 1; j < groupIDS.Length; j++) {
+        if (groupIDS[i] == groupIDS[j]) {
+            hasDuplicates = true;
+            System.Console.WriteLine($"Найдены повторяющиеся номера: {groupIDS[i]} и {groupIDS[i]}");
+            break;
+        }
+    }
+}
+
+System.Console.WriteLine(hasDuplicates ? "Есть повторяющиеся номера" : "Все номера уникальны");
