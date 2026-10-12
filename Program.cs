@@ -46,19 +46,19 @@
 // System.Console.WriteLine($"Сумма баллов за сданные работы: {sum}");
 // System.Console.WriteLine($"Всего работ было сдано: {count}");
 
-// int[] groupIDS = { 101, 104, 107, 104, 110 };
-// bool hasDuplicates = false;
+int[] groupIDS = { 101, 104, 107, 104, 110 };
+bool hasDuplicates = false;
 
-// for (int i = 0; i < groupIDS.Length; i++) {
-//     for (int j = i + 1; j < groupIDS.Length; j++) {
-//         if (groupIDS[i] == groupIDS[j]) {
-//             hasDuplicates = true;
-//             System.Console.WriteLine($"Найдены повторяющиеся номера: {groupIDS[i]} и {groupIDS[i]}");
-//             break;
-//         }
-//     }
-// }
-// System.Console.WriteLine(hasDuplicates ? "Есть повторяющиеся номера" : "Все номера уникальны");
+for (int i = 0; i < groupIDS.Length; i++) {
+    for (int j = i + 1; j < groupIDS.Length; j++) {
+        if (groupIDS[i] == groupIDS[j]) {
+            hasDuplicates = true;
+            System.Console.WriteLine($"Найдены повторяющиеся номера: {groupIDS[i]} и {groupIDS[i]}");
+            break;
+        }
+    }
+}
+System.Console.WriteLine(hasDuplicates ? "Есть повторяющиеся номера" : "Все номера уникальны");
 
 // int days = 5;
 // int lessonsPerDay = 6;
@@ -124,30 +124,30 @@
 // .ToList();
 // Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
 
-System.Console.WriteLine("Вариант 7");
+// System.Console.WriteLine("Вариант 7");
 
-int[] number = { 7, 8, 4, 1, 8, -3 };
-int count = 0;
+// int[] number = { 7, 8, 4, 1, 8, -3 };
+// int count = 0;
 
-for (int i = 0; i < number.Length; i++) {
-    if (number[i] >= 0) {
-        count++;
-    } else {
-        break;
-    }
-}
+// for (int i = 0; i < number.Length; i++) {
+//     if (number[i] >= 0) {
+//         count++;
+//     } else {
+//         break;
+//     }
+// }
 
-System.Console.WriteLine(count);
+// System.Console.WriteLine(count);
 
-System.Console.WriteLine("Вариант 10");
+// System.Console.WriteLine("Вариант 10");
 
-string word = "казак";
-bool palindrome = true;
+// string word = "казак";
+// bool palindrome = true;
 
-for (int i = 0; i < word.Length / 2; i++) {
-    if (word[i] != word[word.Length - 1 - i]) {
-        palindrome = false;
-        break;
-    } 
-}
-System.Console.WriteLine(palindrome ? "Является палиндромом" : "Не является палиндромом");
+// for (int i = 0; i < word.Length / 2; i++) {
+//     if (word[i] != word[word.Length - 1 - i]) {
+//         palindrome = false;
+//         break;
+//     } 
+// }
+// System.Console.WriteLine(palindrome ? "Является палиндромом" : "Не является палиндромом");
